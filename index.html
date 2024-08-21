@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PayPal Button Example</title>
+</head>
+<body>
+    <h1>Donate Now</h1>
+    <p>Click the button below to donate using PayPal:</p>
+
+    <!-- PayPal Button Container -->
+    <div id="paypal-container-VMKNQVMZKHNQE"></div>
+
+    <!-- PayPal SDK Script -->
+    <script src="https://www.paypal.com/sdk/js?client-id=BAA1GVabMRk3MBnTd-W8PtVxtDd_ynSv3HXW5behh1Z-viEenrrNUQukkaWFajP3L8f-m6mKpTqz9Q3W_o&components=hosted-buttons&disable-funding=venmo&currency=USD"></script>
+
+    <!-- PayPal Hosted Buttons Script -->
+    <script>
+      paypal.HostedButtons({
+        hostedButtonId: "VMKNQVMZKHNQE",
+      }).render("#paypal-container-VMKNQVMZKHNQE");
+    </script>
+</body>
+</html>
